@@ -27,6 +27,26 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/login',
+    children: [
+      {
+        path: '',
+        name: 'Login',
+        component: () => import('@/views/loginView.vue'),
+      },
+    ],
+  },
+  {
+    path: '/register',
+    children: [
+      {
+        path: '',
+        name: 'Register',
+        component: () => import('@/views/registerView.vue'),
+      },
+    ],
+  }
 ]
 
 const router = createRouter({
