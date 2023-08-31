@@ -1,53 +1,62 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
+import index from '@/modules/web/indexView.vue'
+// import About from '@/views/aboutView.vue'
+// import Login from '@/views/loginView.vue'
+// import Register from '@/views/registerView.vue'
+
+
 const routes = [
   {
-    path: '/home',
-    // component: () => import('@/layouts/default/Default.vue'),
+    path: '/',
+    name: 'index',
+    component: index,
+  },{
+    path:'/home',
     children: [
       {
-        path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "home" */ '@/views/homeView.vue'),
-      },
-    ],
-  },
-  {
-    path: '/about',
-    // component: () => import('@/layouts/default/Default'),
-    children: [
-      {
-        path: '',
-        name: 'About',
-        component: () => import('@/views/aboutView.vue'),
-      },
-    ],
-  },
-  {
-    path: '/login',
-    children: [
-      {
-        path: '',
-        name: 'Login',
-        component: () => import('@/views/loginView.vue'),
-      },
-    ],
-  },
-  {
-    path: '/register',
-    children: [
-      {
-        path: '',
-        name: 'Register',
-        component: () => import('@/views/registerView.vue'),
-      },
-    ],
+      path:'',
+      name: 'Home',
+      component: () => import('@/modules/web/components/productsComponent.vue')
+    },
+    ]
   }
 ]
+//   {
+//     path: '/about',
+//     children: [
+//       {
+//         path: '',
+//         name: 'About',
+//         component: About,
+//         // component: () => import('@/views/aboutView.vue'),
+//       },
+//     ],
+//   },
+//   {
+//     path: '/login',
+//     children: [
+//       {
+//         path: '',
+//         name: 'Login',
+//         component: Login,
+//         // component: () => import('@/views/loginView.vue'),
+//       },
+//     ],
+//   },
+//   {
+//     path: '/register',
+//     children: [
+//       {
+//         path: '',
+//         name: 'Register',
+//         component: Register,
+//         // component: () => import('@/views/registerView.vue'),
+//       },
+//     ],
+//   }
+// ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
