@@ -1,0 +1,19 @@
+Modulos_
+	|_clientes_
+	|	   |_componentes
+	|
+	|_noLogin_
+		  |_componentes
+
+
+App.vue -> routeview
+
+components -> header,footer,nav 
+
+----------------------------//--------------------------
+
+rutas = igual 
+
+
+nav -> 
+
