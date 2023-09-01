@@ -1,13 +1,12 @@
 <template>
-    <router-view />
+  <div>
+    about
+  </div>
 </template>
 
 <script>
+
 export default {
 
-};
+}
 </script>
-
-<style scoped>
-
-</style>

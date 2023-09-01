@@ -1,25 +1,21 @@
 <template>
   <v-tabs>
-    <v-tab to="/home">
+    <v-tab to="/">
       Inicio
       <v-icon end icon="mdi-home"></v-icon>
     </v-tab>
     <v-spacer></v-spacer>
-    <v-tab to="/">
+    <v-tab to="/about">
       Acerca
       <v-icon end icon="mdi-information"></v-icon>
     </v-tab>
-    <v-tab>
-      contactenos
-      <v-icon end icon="mdi-email-newsletter"></v-icon>
-    </v-tab>
     <v-spacer></v-spacer>
-    <v-tab to="/">
-      Login
+    <v-tab to="/login">
+      Iniciar Sesión
       <v-icon end icon="mdi-login"></v-icon>
     </v-tab>
-    <v-tab to="/">
-      Register
+    <v-tab to="/register">
+      Registerse
       <v-icon end icon="mdi-account-plus"></v-icon>
     </v-tab>
   </v-tabs>
