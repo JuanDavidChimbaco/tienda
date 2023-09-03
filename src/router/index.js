@@ -41,6 +41,26 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/Contactus",
+    children: [
+      {
+        path: "",
+        name: "Contact us",
+        component: () => import("@/modules/web/contactusView.vue"),
+      },
+    ],
+  },
+  {
+    path: "/comentarios",
+    children: [
+      {
+        path: "",
+        name: "comentarios",
+        component: () => import("@/modules/web/CommentView.vue"),
+      },
+    ],
+  },
 ];
 
 const router = createRouter({

@@ -4,7 +4,7 @@
     <navView />
     <div class="content">
       <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="auto">
-      <div class="container-login my-6">
+      <div class="container-login">
         <loginComponent />
       </div>
     </v-parallax>

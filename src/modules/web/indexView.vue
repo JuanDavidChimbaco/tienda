@@ -4,8 +4,14 @@
     <div class="nav-container">
       <navView />
     </div>
+    <div class="">
+      <CarouselComponent />
+    </div>
     <div class="content">
-      <HelloWorld />
+      <startComponent />
+    </div>
+    <div class="content">
+      <CommentViewVue/>
     </div>
     <footerView />
   </div>
@@ -15,16 +21,22 @@
 import headerView from "./views/headerView.vue";
 import navView from "./views/navView.vue";
 import footerView from "./views/footerView.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import startComponent from "./components/startComponent.vue";
+import CarouselComponent from "./components/CarouselComponent.vue";
+import CommentViewVue from "./CommentView.vue";
 
-  export default {
-    components: {
-      headerView,
-      navView,
-      footerView,
-      HelloWorld
-    },
-  }
+export default {
+  components: {
+    headerView,
+    navView,
+    footerView,
+    // HelloWorld,
+    startComponent,
+    CarouselComponent,
+    CommentViewVue,
+  },
+}
 </script>
 
 <style>
@@ -37,8 +49,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 .nav-container {
   position: sticky;
   top: 0;
-  background-color: white; /* Puedes ajustar el color de fondo según tus necesidades */
-  z-index: 1; /* Asegura que el nav esté en el frente */
+  background-color: white;
+  z-index: 1;
 }
 
 .content {
